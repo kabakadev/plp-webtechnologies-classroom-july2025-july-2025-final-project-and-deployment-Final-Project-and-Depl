@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme Studio — Home</title>
+  <meta name="description" content="A clean, responsive multipage starter site." />
+  <link rel="preload" as="image" href="images/hero-1.jpg">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Acme Studio logo" width="36" height="36" />
+      <span>Acme Studio</span>
+    </a>
+
+    <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="btn btn-small" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Slider -->
+    <section class="hero" aria-label="Featured images">
+      <div class="slider" data-slider>
+        <div class="slides">
+          <div class="slide is-active" style="background-image:url('images/hero-1.jpg');">
+            <div class="slide-content">
+              <h1>Build. Launch. Grow.</h1>
+              <p>We craft modern, accessible websites that scale with you.</p>
+              <a class="btn" href="services.html">See Services</a>
+            </div>
+          </div>
+          <div class="slide" style="background-image:url('images/hero-2.jpg');">
+            <div class="slide-content">
+              <h2>Fast, Responsive, Beautiful</h2>
+              <p>Mobile-first design and performance baked in.</p>
+              <a class="btn btn-outline" href="about.html">Learn More</a>
+            </div>
+          </div>
+          <div class="slide" style="background-image:url('images/hero-3.jpg');">
+            <div class="slide-content">
+              <h2>From Idea to Impact</h2>
+              <p>We turn concepts into real-world results.</p>
+              <a class="btn" href="contact.html">Start a Project</a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-control prev" aria-label="Previous slide" data-prev>&larr;</button>
+        <button class="slider-control next" aria-label="Next slide" data-next>&rarr;</button>
+        <div class="slider-dots" role="tablist" aria-label="Slider pagination" data-dots></div>
+      </div>
+    </section>
+
+    <section class="container grid-3 gap-lg mt-xl reveal">
+      <article class="card">
+        <h3>Semantic HTML</h3>
+        <p>Clean structure improves accessibility, SEO, and maintainability.</p>
+      </article>
+      <article class="card">
+        <h3>Modern CSS</h3>
+        <p>Custom properties, responsive layout, and smooth micro-interactions.</p>
+      </article>
+      <article class="card">
+        <h3>Vanilla JS</h3>
+        <p>Lightweight interactivity: sliders, menus, validation, and more.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Acme Studio. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Acme Studio</title>
+  <meta name="description" content="Learn about Acme Studio and our approach." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Acme Studio logo" width="36" height="36" />
+      <span>Acme Studio</span>
+    </a>
+    <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a aria-current="page" href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="btn btn-small" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="stack-lg reveal">
+      <h1>We believe small details create big impact.</h1>
+      <p>Acme Studio is a tiny team with a big heart for the web. We value performance, accessibility, and thoughtful design.</p>
+    </section>
+
+    <section class="grid-2 gap-lg mt-xl reveal">
+      <article class="card">
+        <h2>Our Values</h2>
+        <ul>
+          <li>Accessibility first</li>
+          <li>Performance as a feature</li>
+          <li>Clarity over complexity</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Our Stack</h2>
+        <p>We keep it lean: HTML5, CSS3, and vanilla JS for most projects.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Acme Studio. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

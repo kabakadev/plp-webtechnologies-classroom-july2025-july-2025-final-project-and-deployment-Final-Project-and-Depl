@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Acme Studio</title>
+  <meta name="description" content="Contact Acme Studio to start your project." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Acme Studio logo" width="36" height="36" />
+      <span>Acme Studio</span>
+    </a>
+    <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a aria-current="page" class="btn btn-small" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid-2 gap-lg mt-lg">
+      <div class="stack-lg reveal">
+        <h1>Let's work together</h1>
+        <p>Fill out the form and we’ll get back to you within 1–2 business days.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name<span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" required minlength="2" placeholder="Jane Doe" />
+            <small class="error" id="err-name"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email<span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="jane@example.com" />
+            <small class="error" id="err-email"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message<span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Tell us about your project..."></textarea>
+            <small class="error" id="err-message"></small>
+          </div>
+
+          <button class="btn" type="submit">Send message</button>
+          <p class="success hide" id="success">Thanks! Your message passed validation (demo).</p>
+        </form>
+      </div>
+
+      <aside class="card reveal">
+        <h2>Contact Info</h2>
+        <p><strong>Email:</strong> hello@acme.test</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9am–5pm</p>
+        <p><strong>Location:</strong> Remote • Worldwide</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Acme Studio. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
