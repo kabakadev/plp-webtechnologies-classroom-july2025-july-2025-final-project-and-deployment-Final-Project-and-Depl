@@ -52,39 +52,10 @@ python -m http.server 8080
 
 ### GitHub Pages
 
-1. Push your repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Source**, select `main` branch → `/ (root)`.
-4. Save — your site will be live at:
+This project is already deployed via **GitHub Pages** and can be accessed here:
 
-   ```
-   https://<username>.github.io/<repo>/
-   ```
+👉 [Live Demo](https://kabakadev.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
-### Netlify
-
-* Drag & drop the folder to [Netlify Drop](https://app.netlify.com/drop), or connect your Git repo:
-
-  * Build command: none
-  * Publish directory: `/`
-
-### Vercel
-
-* Run `vercel` in your project root (or import repo in dashboard).
-* Framework preset: **Other**
-* Output directory: `/`
-
----
-
-## ✅ Checklist
-
-* [ ] Replace placeholder images in `/images/`
-* [ ] Update `<title>` and `<meta description>` for each page
-* [ ] Test all links on mobile & desktop
-* [ ] Validate HTML & CSS (W3C Validators)
-* [ ] Lighthouse check: Performance, Accessibility, Best Practices, SEO
-
----
 
 ## 📄 License
 
